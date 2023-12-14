@@ -1,0 +1,619 @@
+/* 
+==================================================================================
+==================================================================================
+http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+==================================================================================
+==================================================================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+==================================================================================
+==================================================================================
+Box Model
+==================================================================================
+==================================================================================
+*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+/* File Content
+=================================================================================
+=================================================================================
+# Base
+  – normalize
+  – layout
+  – typography
+=================================================================================
+=================================================================================
+*/
+
+/*
+==================================================================================
+==================================================================================
+==================================================================================
+ - layout
+==================================================================================
+==================================================================================
+==================================================================================
+*/
+
+
+
+/*
+==================================================================================
+==================================================================================
+possibilities
+==================================================================================
+==================================================================================
+*/
+
+.pos {
+	background-color: violet;
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.pos_pre {
+	background-color: yellow;
+	display: inline-block;
+	width: 606.5px;
+	height: 850px;
+	margin-left: 7.5%;
+}
+
+.pos_l_img {
+	background-color: whitesmoke;
+	width: 55.5%;
+	height: 700px;
+	display: inline-block;
+}
+
+.pos_mon {
+	background-color: wheat;
+	display: inline-block;
+	width: 39.5%;
+	height: 250px;
+	position: absolute;
+	margin-left: 5%;
+	bottom: 0;
+}
+
+.pos_r_img {
+	background-color: tomato;
+	display: inline-block;
+	width: 39.5%;
+	height: 700px;
+	position: absolute;
+	margin-left: 5%;
+	top: 550px;
+}
+
+
+/*
+==================================================================================
+==================================================================================
+ sponcors
+==================================================================================
+==================================================================================
+*/
+
+.spon {
+	background-color: thistle;
+	width: 100%;
+	height: 350px;
+}
+
+
+/*
+==================================================================================
+==================================================================================
+business
+==================================================================================
+==================================================================================
+*/
+
+.bus {
+	background-color: teal;
+	width: 100%;
+	height: 1299.06px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
+}
+
+.bus_cont {
+	background-color: tan;
+	width: 87.17%;
+	height: 972px;
+}
+
+.bus_hd {
+	background-color: springgreen;
+	width: 51.9%;
+	height: 258px;
+	margin-bottom: 58px;
+}
+
+.bus_bd {
+	background-color: sienna;
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bus_main_1 {
+	background-color: snow;
+	width: 27%;
+	height: 384px;
+}
+
+.bus_main_2 {
+	background-color: slategrey;
+	width: 27%;
+	height: 655.1px;
+}
+
+.bus_main_3 {
+	background-color: silver;
+	width: 27%;
+	height: 470px;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+
+
+/*
+==================================================================================
+==================================================================================
+small
+==================================================================================
+==================================================================================
+*/
+
+.small {
+	background-color: seashell;
+	width: 100%;
+	height: 2740.65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.small_cont {
+	background-color: seagreen;
+	width: 86.6%;
+	height: /*2420.7px*/ auto;
+}
+
+.small_hd {
+	background-color: sandybrown;
+	width: 100%;
+	height: /*172px*/ auto;
+	margin-bottom: 108px;
+}
+
+.small_bd {
+	background-color: salmon;
+	width: 100%;
+	height: 1285.65px;
+	margin: 0 auto;
+	margin-bottom: 182px;
+	display: flex;
+	justify-content: center;
+}
+
+.small_main {
+	background-color: turquoise;
+	width: 100%;
+	height: 1285.65px;
+	position: relative;
+}
+
+.small_top {
+	background-color: wheat;
+	width: 100%;
+	height: 648px;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.small_top_left {
+	background-color: gold;
+	width: 32%;
+	height: 224px;
+}
+
+.small_top_right {
+	background-color: goldenrod;
+	width: 51%;
+	height: 648px;
+}
+
+.small_btm {
+	background-color: cadetblue;
+	width: 100%;
+	height: 725px;
+	z-index: 2;
+	position: absolute;
+	top: 580px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.small_btm_left {
+	background-color: firebrick;
+	width: 57.9%;
+	height: 725px;
+}
+
+.small_btm_right {
+	background-color: forestgreen;
+	width: 32%;
+	height: 502px;
+	bottom: 0;
+}
+
+/*
+==================================================================================
+support
+==================================================================================
+*/
+.sup {
+	background-color: plum;
+	width: 87.17%;
+	height:550px;
+	margin-bottom: 48px;
+}
+
+
+/*
+==================================================================================
+==================================================================================
+payment
+==================================================================================
+==================================================================================
+*/
+
+.pay {
+	background-color: palegoldenrod;
+	width: 100%;
+	height: 1061px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pay_cont {
+	background-color: peru;
+	width: 97.66%;
+	height: 741px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pay_hd {
+	background-color: peachpuff;
+	width: 63.15%;
+	height: 258px;
+	margin-bottom: 49px;
+}
+
+.pay_title {
+	background-color: papayawhip;
+	width: 49.49%;
+	height: 96px;
+	margin-bottom: 49px;
+}
+
+.pay_cards {
+	background-color: paleturquoise;
+	width: 96.27%;
+	height: 289px;
+	display: flex;
+}
+
+.pay_slide {
+	background-color: palevioletred;
+	width: 40.87%;
+	height: 289px;
+	padding: 50px 60px;
+}
+
+.pay_1 {
+	background-color:orangered;
+	z-index: 0;
+}
+
+.pay_2 {
+	background-color: orange;
+	z-index: 1;
+}
+
+.pay_3 {
+	background-color:lawngreen;
+	z-index: 2;
+}
+
+
+/*
+==================================================================================
+==================================================================================
+api
+==================================================================================
+==================================================================================
+*/
+
+.api {
+	background-color: yellowgreen;
+	width: 100%;
+	height: 1211px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.api_cont {
+	background-color: whitesmoke;
+	width: 96.81%;
+	height: 891px;
+}
+
+.api_hd {
+	background-color: wheat;
+	width: 67.22%;
+	height: 344px;
+	margin-bottom: 40px;
+}
+
+.api_title {
+	background-color: violet;
+	width: 49.41%;
+	height: 96px;
+	margin-bottom: 40px;
+}
+
+.api_main {
+	background-color: tomato;
+	width: 87.17%;
+	height: 226px;
+	margin-bottom: 70px;
+}
+
+
+/*
+==================================================================================
+==================================================================================
+footprints
+==================================================================================
+==================================================================================
+*/
+
+.footprint {
+	background-color: thistle;
+	width: 100%;
+	height: 1152px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footprint_cont {
+	background-color: teal;
+	width: 97.66%;
+	height: 832px;
+	margin: 0 5.24%;
+}
+
+.footprint_hd {
+	background-color: tan;
+	width: 55.02%;
+	height: 86px;
+	margin-bottom: 106px;
+}
+
+.footprint_bd {
+	background-color: steelblue;
+	width: 87.17%;
+	height: 640px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footprint_main {
+	background-color: springgreen;
+	width: 50%;
+	height: 550.77px;
+}
+
+.footprint_main_stat {
+	background-color: slategrey;
+	width: 100%;
+	height: 63.40px;
+	padding-left: 37px;
+	margin-bottom: 62px;
+}
+
+.footprint_bottom {
+	background-color: slategrey;
+	height: 177.59px;
+}
+
+.footprint_globe {
+	background-color: snow;
+	width: 50%;
+	height: 640px;
+	margin: 0;
+}
+
+.globe {
+	background-color: slateblue;
+	display: inline-block;
+	width: 695px;
+	height: 700px;
+	overflow-x: hidden;
+}
+
+
+/*
+==================================================================================
+==================================================================================
+start
+==================================================================================
+==================================================================================
+*/
+
+.start {
+	background-color: whitesmoke;
+	width: 100%;
+	height: 634px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.start_cont {
+	background-color: wheat;
+	width: 96.96%;
+	height: 434px;
+}
+
+.start_main {
+	background-color: teal;
+	width: 87.17%;
+	height: inherit;
+	margin: 0 auto;
+	padding: 2.39%;
+
+}
+
+.start_bd {
+	background-color: silver;
+	width: 67.95%;
+	height: 257px;
+	margin: 6.04% 13.28%;
+}
+
+
+/*
+==================================================================================
+==================================================================================
+==================================================================================
+ - Typography
+==================================================================================
+==================================================================================
+==================================================================================
+*/
+
+/* 
+==================================================================================
+==================================================================================
+ general typography
+==================================================================================
+==================================================================================
+ */
+
+ h1 p {
+	font-size: 100px;
+	line-height: 108px;
+	font-weight: 500;
+ }
+
+ h2 p {
+	font-size: 80px;
+	line-height: 86px;
+	font-weight: 500;
+ }
+
+ h3 p {
+	font-size: 50px;
+	line-height: 54px;
+	font-weight: 500;
+ }
+
+ h4 p {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 600;
+ }
+
+ h5 p {
+	font-size: 22px;
+	line-height: 32px;
+	font-weight: 300;
+ }
+
+ h6 p {
+	font-size: 20px;
+	line-height: 32px;
+	font-weight: 300;
+ }
+
+ .eight {
+	font-size: 18px;
+ } 
+
+ .six {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+ }
