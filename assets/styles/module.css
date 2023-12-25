@@ -94,7 +94,6 @@ header {
 	width: 85%;
 	margin: 0 auto;
 	height: 100px;
-	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: end;
@@ -157,11 +156,6 @@ footer {
 	justify-content: space-between;
 }
 
-.country {
-	background-color: wheat;
-	width: 12.2%;
-	height: 100%;
-}
 
 .footer_btm {
 	background-color: wheat;

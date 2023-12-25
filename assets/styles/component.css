@@ -85,7 +85,9 @@ Box Model
 /* 
 ==================================================================================
 ==================================================================================
+==================================================================================
  list
+==================================================================================
 ==================================================================================
 ==================================================================================
 */
@@ -106,6 +108,7 @@ header
 	width: auto;
 	height: 38px;
 	padding: 10px;
+	max-width: max-content;
 }
 
 /* 
@@ -158,7 +161,9 @@ footer
 /* 
 ==================================================================================
 ==================================================================================
+==================================================================================
  nav
+==================================================================================
 ==================================================================================
 ==================================================================================
 */
@@ -173,6 +178,7 @@ header nav
 	background-color: yellow;
 	width: 54.5%;
 	height: 38px;
+	z-index: 200;
 }
 
 /* 
@@ -195,11 +201,353 @@ footer nav
 /* 
 ==================================================================================
 ==================================================================================
+==================================================================================
  dropdowns
+==================================================================================
 ==================================================================================
 ==================================================================================
 */
 
+
+/* 
+==================================================================================
+==================================================================================
+general
+==================================================================================
+==================================================================================
+*/
+
+.drop_cont {
+	display: inline-block;
+}
+
+.header_li:hover ~ .drop_down {
+	display: flex;
+	position: absolute;
+}
+
+.drop_down:hover {
+	display: inline-block;
+	position: absolute;
+}
+
+.drop_img {
+	background-color: cadetblue;
+	width: 45px;
+	height: 45px;
+	border-radius: 10px;
+	display: inline-block;
+	margin: auto 2px;
+}
+
+.drop_p {
+	background-color: tan;
+	width: 230.6px;
+	height: auto;
+	display: inline-block;
+}
+
 .drop_down {
+	background-color: firebrick;
+	display: none;
+	z-index: 100;
+	width: auto;
+}
+
+/* 
+==================================================================================
+Business
+==================================================================================
+*/
+
+.business:hover {
+	display: flex;
+	position: absolute;
+	width: auto;
+	height: auto;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+.busi_aside {
+	background-color: yellowgreen;
+	display: inline-block;
+	width: 235px;
+	height: 496px;
+	padding: 5px;
+}
+
+.busi_aside p {
+	background-color: antiquewhite;
+	width: 98%;
+	margin: 0 auto;
+	padding: 20px 20px;
+	border-radius: 10px;
+}
+
+.busi_main {
+	background-color: yellow;
+	display: inline-block;
+	width: 318px;
+	height: 496px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.busi_main_cont {
+	background-color: green;
+	width: 289px;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+
+
+/* 
+==================================================================================
+smes
+==================================================================================
+*/
+
+.sme {
+	position: absolute;
+	width: 832px;
+	height: 439px;
+	left: 400px;
+}
+
+.sme:hover {
+	position: absolute;
+	display: flex;
+	height: 439px;
+	left: 400px;
+}
+
+.sme_aside {
+	background-color: yellowgreen;
+	width: 235px;
+	height: 439px;
+}
+
+.sme_aside p {
+	background-color: antiquewhite;
+	width: 98%;
+	margin: 0 auto;
+	padding: 20px 20px;
+	border-radius: 10px;
+}
+
+.sme_main {
+	background-color: yellow;
+	width: 596px;
+	height: 439px;
+	display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between; 
+	align-content: space-around;
+}
+
+.sme_main_hold {
+	width: auto;
+	height: auto;
+	display: inline-block;
+}
+
+.sme_main_cont {
+	background-color: green;
+	width: 289px;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+/* 
+==================================================================================
+individual
+==================================================================================
+*/
+
+.header_li:hover ~ .individual {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+	position: absolute;
+}
+
+.individual {
+	position: absolute;
+	background-color: wheat;
+	width: 318px;
+	height: 437px;
+}
+
+.individual:hover {
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: center;
+}
+
+.ind_main_hold {
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+.ind_main_cont {
+	background-color: turquoise;
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ind_barcode {
+	width: 100%;
+	height: 80px;
+	border: 1px dotted gray;
+}
+
+/* 
+==================================================================================
+resources
+==================================================================================
+*/
+
+.header_li:hover ~ .resource {
+	display: block;
+	position: absolute;
+	width: 182px;
+	height: 186px;
+}
+
+.resource {
+	position: absolute;
+	background-color: wheat;
+}
+
+.resource:hover {
+	position: absolute;
+	display: block;
+	width: 182px;
+	height: 186px;
+}
+
+.resource_cont p {
+	background-color: aqua;
+	width: 96%;
+	height: 45px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/* 
+==================================================================================
+developers
+==================================================================================
+*/
+
+.header_li:hover ~ .developer {
+	display: block;
+	position: absolute;
+	width: 182px;
+	height: 148px;
+}
+
+.developer {
+	position: absolute;
+	background-color: wheat;
+}
+
+.developer:hover {
+	position: absolute;
+	display: block;
+	width: 182px;
+	height: 148px;
+}
+
+.developer_cont p {
+	background-color: aqua;
+	width: 96%;
+	height: 45px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/* 
+==================================================================================
+company
+==================================================================================
+*/
+
+.header_li:hover ~ .company {
+	display: block;
+	position: absolute;
+	width: 182px;
+	height: 114px;
+}
+
+.company {
+	position: absolute;
+	background-color: wheat;
+}
+
+.company:hover {
+	position: absolute;
+	display: block;
+	width: 182px;
+	height: 114px;
+}
+
+.company_cont p {
+	background-color: aqua;
+	width: 96%;
+	height: 45px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+
+/* 
+==================================================================================
+==================================================================================
+==================================================================================
+select
+==================================================================================
+==================================================================================
+==================================================================================
+*/
+
+.drop_downs {
 	display: none;
 }
+
+.selected_country {
+	background-color: teal;
+	display: inline-block;
+	width: 100px;
+	height: 100%;
+}
+
+.selected_country:hover ~ .drop_downs {
+	display: block;
+	position: absolute;
+}
+
+.drop_downs:hover {
+	position: absolute;
+	background-color: cornflowerblue;
+	display: block;
+	width: auto;
+	height: auto;
+	bottom: -300px;
+}
+
+
